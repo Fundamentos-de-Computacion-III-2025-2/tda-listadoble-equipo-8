@@ -31,7 +31,7 @@ public class ListaDoble {
     /* Metodo para insertar un elemento suponiendo que la lista está en orden ascendente
     es decir, se debe comenzar a recorrer la lista e insertar el elemento antes del primer
     número mayor al elemento que se encuentre en la lista, si no se encuentar un dato mayor
-    se inserta al final  */
+    se inserta al final   */
     //TODO @Martínez Ruiz Josué Ignacio
     public void insertarEnOrden(int dato){
 
