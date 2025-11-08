@@ -54,7 +54,7 @@ public class Main {
                             break;
                         case 5: //Eliminar al final TODO @Martínez Ruiz Josué Ignacio
                             break;
-                        case 6: //Eliminar TODO @Ortega Molina Marco Sebastian
+                        case 6: //Eliminar TODO @Ortega Molina Marco Sebastiann
                             break;
                         case 7: //Buscar elemento TODO @Ortega Molina Marco Sebastian
                             break;
