@@ -52,7 +52,7 @@ public class ListaDoble {
 
     //Eliminar un elemento TODO @Ortega Molina Marco Sebastian
     public int eliminarElemento(int elemento){
-
+//si se cambia atte sebas
         return elemento;
     }
 
