@@ -38,7 +38,7 @@ public class ListaDoble {
     }
 
 
-    //Eliminar al inicio TODO @Leyva Silva Andres Jovany
+    //Eliminar al inicio TODO @Leyva Silva Andres Jovany :3
     public int eliminarInicio(){
 
         return -1;
