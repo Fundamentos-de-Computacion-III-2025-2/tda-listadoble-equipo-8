@@ -32,7 +32,7 @@ public class Main {
             do {
                 try {
                     opcion = Integer.parseInt(JOptionPane.showInputDialog(null,
-                            "1. Insertar un elemento al inicio\n"+ //TODO @Rodriguez Andrade Denise
+                            "1. Insertar un elemento al inicio\n"+ //TODO @Rodriguez Andrade Denise:)
                                     "2. Insertar un elemento al final\n"+ //TODO @Leyva Silva Andres Jovany
                                     "3. Insertar un elemento en orden\n"+ //TODO @Martínez Ruiz Josué Ignacio
                                     "4. Eliminar un elemento al inicio\n"+ //TODO @Leyva Silva Andres Jovany
