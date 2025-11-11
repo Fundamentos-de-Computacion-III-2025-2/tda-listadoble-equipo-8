@@ -17,10 +17,11 @@ public class ListaDoble {
     }
 
     //Metodo para agregar un NodoDoble al Inicio de la Lista Doble TODO @Rodriguez Andrade Denise
-    public void insertarInicio(int dato){
+    public void insertarInicio(int dato) {
+        // 1. Crear el nuevo nodo, enlazándolo al actual 'inicio'
 
+        }
 
-    }
 
     //Metodo para insertar al Final de la lista doble TODO @Leyva Silva Andres Jovany
     public void insertarFinal(int dato){
@@ -38,11 +39,24 @@ public class ListaDoble {
     }
 
 
-    //Eliminar al inicio TODO @Leyva Silva Andres Jovany :3
+    //Eliminar al inicio
     public int eliminarInicio(){
+            if (inicio == null) {
+                return -1;
+            }
+            int actual = inicio.dato;
 
-        return -1;
-    }
+            if (inicio.siguiente == null) {
+                inicio = null;
+                fin = null;
+            }
+            else {
+
+                inicio = inicio.siguiente;
+                inicio.anterior = null;
+            }
+            return actual;
+        }
 
     //Eliminar al final TODO @Martínez Ruiz Josué Ignacio
     public int eliminarFinal(){

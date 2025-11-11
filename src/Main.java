@@ -44,13 +44,24 @@ public class Main {
                                     "10. Salir\n",
                             "Menú de opciones", 3));
                     switch (opcion) {
-                        case 1://Insertar un elemento al inicio TODO @Rodriguez Andrade Denise
+                        case 1: //Insertar un elemento al inicio TODO @Rodriguez Andrade Denise
                             break;
                         case 2://Insertar un elemento al final TODO @Leyva Silva Andres Jovany
                             break;
                         case 3: //Insertar en orden TODO @Martínez Ruiz Josué Ignacio
                             break;
-                        case 4: //Eliminar al inicio TODO @Leyva Silva Andres Jovany
+                        case 4:
+                            Integer elementoEliminado = lista.eliminarInicio();
+
+                            if (elementoEliminado != null) {
+
+                                JOptionPane.showMessageDialog(null, "Elemento " + elementoEliminado + " eliminado del inicio.",
+                                        "Éxito", JOptionPane.INFORMATION_MESSAGE);
+                            } else {
+                                JOptionPane.showMessageDialog(null, "La lista está vacía. No se pudo eliminar.",
+                                        "Error", JOptionPane.ERROR_MESSAGE); // O WARNING_MESSAGE
+                            }
+
                             break;
                         case 5: //Eliminar al final TODO @Martínez Ruiz Josué Ignacio
                             break;
