@@ -48,8 +48,6 @@ public class ListaDoble {
             fin = nodo;
         }
     }
-
-
     /* Metodo para insertar un elemento suponiendo que la lista está en orden ascendente
     es decir, se debe comenzar a recorrer la lista e insertar el elemento antes del primer
     número mayor al elemento que se encuentre en la lista, si no se encuentar un dato mayor
@@ -116,14 +114,38 @@ public class ListaDoble {
     //Eliminar un elemento TODO @Ortega Molina Marco Sebastian
     public int eliminarElemento(int elemento) {
 
-        return elemento;
+        int datoEliminado = actual.dato;
+
+        if (actual == inicio && actual == fin) {
+            inicio = null;
+            fin = null;
+        }
+        else if (actual == inicio) {
+            inicio = inicio.siguiente;
+            inicio.anterior = null;
+        }
+        else if (actual == fin) {
+            fin = fin.anterior;
+            fin.siguiente = null;
+        }
+        else {
+            actual.anterior.siguiente = actual.siguiente;
+            actual.siguiente.anterior = actual.anterior;
+        }
+
+        return datoEliminado;
     }
 
-    //Metodo para buscar un elemento TODO @Ortega Molina Marco Sebastian
-    public boolean buscarElemento(int elemento) {
-
+    //Metodo para buscar un elemento Ortega Molina Marco Sebastian
+    public boolean buscarElemento(int elemento){
+        NodoDoble actual = inicio;
+        while(actual != null){
+            if(actual.dato == elemento){
+                return true;
+            }
+            actual = actual.siguiente;
+        }
         return false;
-
     }
 
     //Imprimir los datos de la lista doble de inicio a fin TODO @Ibarra Padilla Sebastian

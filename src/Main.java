@@ -85,9 +85,33 @@ public class Main {
                             elemento = lista.eliminarFinal();
                             JOptionPane.showMessageDialog(null, "Se eliminó al elemento " + elemento, "Eliminar elemento al Final ", 1);
                             break;
-                        case 6: //Eliminar TODO @Ortega Molina Marco Sebastian
+                        case 6: //Eliminar  Molina Marco Sebastian
+                            try {
+                                elemento = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingrese el elemento a eliminar:", "Eliminar Elemento", JOptionPane.QUESTION_MESSAGE));
+                                int Elementoeliminado = lista.eliminarElemento(elemento);
+
+                                if (Elementoeliminado != -1) {
+                                    JOptionPane.showMessageDialog(null, "Elemento " + Elementoeliminado + " eliminado.", "Éxito", JOptionPane.INFORMATION_MESSAGE);
+                                } else {
+                                    JOptionPane.showMessageDialog(null, "Elemento " + elemento + " no encontrado en la lista.", "Error", JOptionPane.ERROR_MESSAGE);
+                                }
+                            } catch (NumberFormatException n) {
+                                JOptionPane.showMessageDialog(null, "Error: Ingrese un número válido.", "Error de Ingreso", JOptionPane.ERROR_MESSAGE);
+                            }
                             break;
-                        case 7: //Buscar elemento TODO @Ortega Molina Marco Sebastian
+                        case 7: //Buscar elemento  Molina Marco Sebastian
+                            try {
+                                elemento = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingrese el elemento a buscar:", "Buscar Elemento", JOptionPane.QUESTION_MESSAGE));
+                                boolean encontrado = lista.buscarElemento(elemento);
+
+                                if (encontrado) {
+                                    JOptionPane.showMessageDialog(null, "Elemento " + elemento + " SÍ se encuentra en la lista.", "Encontrado", JOptionPane.INFORMATION_MESSAGE);
+                                } else {
+                                    JOptionPane.showMessageDialog(null, "Elemento " + elemento + " NO se encuentra en la lista.", "No Encontrado", JOptionPane.INFORMATION_MESSAGE);
+                                }
+                            } catch (NumberFormatException n) {
+                                JOptionPane.showMessageDialog(null, "Error: Ingrese un número válido.", "Error de Ingreso", JOptionPane.ERROR_MESSAGE);
+                            }
                             break;
                         case 8: //MostrarLista TODO @Ibarra Padilla Sebastian
                             lista.mostrarInicioFin();
