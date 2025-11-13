@@ -41,7 +41,7 @@ public class ListaDoble {
     //Eliminar al inicio TODO @Leyva Silva Andres Jovany
     public int eliminarInicio(){
 
-        return -1;
+          return -1;
     }
 
     //Eliminar al final TODO @Martínez Ruiz Josué Ignacio
