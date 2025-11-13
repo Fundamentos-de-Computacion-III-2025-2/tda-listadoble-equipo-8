@@ -113,10 +113,10 @@ public class Main {
                                 JOptionPane.showMessageDialog(null, "Error: Ingrese un número válido.", "Error de Ingreso", JOptionPane.ERROR_MESSAGE);
                             }
                             break;
-                        case 8: //MostrarLista TODO @Ibarra Padilla Sebastian
+                        case 8: //MostrarLista - Ibarra Padilla Sebastian
                             lista.mostrarInicioFin();
                             break;
-                        case 9: //MostrarLista TODO @Ibarra Padilla Sebastian
+                        case 9: //MostrarLista - Ibarra Padilla Sebastian
                             lista.mostrarFinInicio();
                             break;
                         case 10: //Salir
