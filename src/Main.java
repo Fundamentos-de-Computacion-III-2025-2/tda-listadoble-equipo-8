@@ -60,14 +60,10 @@ public class Main {
                         case 4:
                             Integer elementoEliminado = lista.eliminarInicio();
 
-                            if (elementoEliminado != null) {
 
                                 JOptionPane.showMessageDialog(null, "Elemento " + elementoEliminado + " eliminado del inicio.",
                                         "Éxito", JOptionPane.INFORMATION_MESSAGE);
-                            } else {
-                                JOptionPane.showMessageDialog(null, "La lista está vacía. No se pudo eliminar.",
-                                        "Error", JOptionPane.ERROR_MESSAGE); // O WARNING_MESSAGE
-                            }
+
 
                             break;
                         case 5: //Eliminar al final TODO @Martínez Ruiz Josué Ignacio

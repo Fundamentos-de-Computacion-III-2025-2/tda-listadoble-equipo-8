@@ -47,7 +47,7 @@ public class ListaDoble {
 
     //Eliminar al inicio
     public int eliminarInicio(){
-            if (inicio == null) {
+            if (inicio == null) { //correcion
                 return -1;
             }
             int actual = inicio.dato;
