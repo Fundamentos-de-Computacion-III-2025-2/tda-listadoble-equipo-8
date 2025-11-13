@@ -25,7 +25,10 @@ public class ListaDoble {
     public void insertarFinal(int dato){
 
     }
-
+    /* Metodo para insertar un elemento suponiendo que la lista está en orden ascendente
+        es decir, se debe comenzar a recorrer la lista e insertar el elemento antes del primer
+        número mayor al elemento que se encuentre en la lista, si no se encuentar un dato mayor
+        se inserta al final*/
     //TODO @Martínez Ruiz Josué Ignacio
     public void insertarEnOrden(int dato){
 
@@ -96,7 +99,12 @@ public class ListaDoble {
 
     //Imprimir los datos de la lista doble de inicio a fin TODO @Ibarra Padilla Sebastian
     public void mostrarInicioFin(){
-
+        NodoDoble actual=inicio;
+        System.out.println();
+        while(actual!=null){
+            System.out.print(actual.dato+" --> ");
+            actual = actual.siguiente;
+        }
     }
 
     //Imprimir los datos de la lista doble de fin a inicio TODO @Ibarra Padilla Sebastian
