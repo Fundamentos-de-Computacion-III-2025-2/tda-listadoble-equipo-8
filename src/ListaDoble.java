@@ -18,14 +18,20 @@ public class ListaDoble {
 
     //Metodo para agregar un NodoDoble al Inicio de la Lista Doble TODO @Rodriguez Andrade Denise
     public void insertarInicio(int dato) {
-        // 1. Crear el nuevo nodo, enlazándolo al actual 'inicio'
+    }
 
+
+    //Metodo para insertar al Final de la lista doble
+    public void insertarFinal(int dato) {
+        NodoDoble nodo = new NodoDoble(dato);
+        if (listaVacia()) {
+            inicio = nodo;
+            fin = nodo;
+        } else {
+            nodo.anterior = fin;
+            fin.siguiente = nodo;
+            fin = nodo;
         }
-
-
-    //Metodo para insertar al Final de la lista doble TODO @Leyva Silva Andres Jovany
-    public void insertarFinal(int dato){
-
     }
 
 

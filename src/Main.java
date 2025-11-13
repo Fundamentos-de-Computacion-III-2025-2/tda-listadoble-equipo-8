@@ -33,9 +33,9 @@ public class Main {
                 try {
                     opcion = Integer.parseInt(JOptionPane.showInputDialog(null,
                             "1. Insertar un elemento al inicio\n"+ //TODO @Rodriguez Andrade Denise
-                                    "2. Insertar un elemento al final\n"+ //TODO @Leyva Silva Andres Jovany
+                                    "2. Insertar un elemento al final\n"+
                                     "3. Insertar un elemento en orden\n"+ //TODO @Martínez Ruiz Josué Ignacio
-                                    "4. Eliminar un elemento al inicio\n"+ //TODO @Leyva Silva Andres Jovany
+                                    "4. Eliminar un elemento al inicio\n"+
                                     "5. Eliminar un elemento al final\n"+ //TODO @Martínez Ruiz Josué Ignacio
                                     "6. Eliminar un elemento\n"+ //TODO @Ortega Molina Marco Sebastian
                                     "7. Buscar un elemento\n"+ //TODO @Ortega Molina Marco Sebastian
@@ -46,7 +46,14 @@ public class Main {
                     switch (opcion) {
                         case 1: //Insertar un elemento al inicio TODO @Rodriguez Andrade Denise
                             break;
-                        case 2://Insertar un elemento al final TODO @Leyva Silva Andres Jovany
+                        case 2://Insertar un elemento al final
+                            try {
+                                elemento = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingrese el elemento a insertar al final:", "Insertar al Inicio", JOptionPane.QUESTION_MESSAGE));
+                                lista.insertarFinal(elemento);
+                                JOptionPane.showMessageDialog(null, "Elemento " + elemento + " insertado al final.", "Éxito", JOptionPane.INFORMATION_MESSAGE);
+                            } catch (NumberFormatException n) {
+                                JOptionPane.showMessageDialog(null, "Error: Ingrese un número válido.", "Error de Ingreso", JOptionPane.ERROR_MESSAGE);
+                            }
                             break;
                         case 3: //Insertar en orden TODO @Martínez Ruiz Josué Ignacio
                             break;
