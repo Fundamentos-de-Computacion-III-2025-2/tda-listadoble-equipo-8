@@ -32,8 +32,8 @@ public class Main {
             do {
                 try {
                     opcion = Integer.parseInt(JOptionPane.showInputDialog(null,
-                            "1. Insertar un elemento al inicio\n"+ //TODO @Rodriguez Andrade Denise
-                                    "2. Insertar un elemento al final\n"+  //TODO Leyva Silva Andres Jovany
+                            "1. Insertar un elemento al inicio\n"+
+                                    "2. Insertar un elemento al final\n"+ //TODO @Leyva Silva Andres Jovany
                                     "3. Insertar un elemento en orden\n"+ //TODO @Martínez Ruiz Josué Ignacio
                                     "4. Eliminar un elemento al inicio\n"+ //TODO Leyva Silva Andres Jovany
                                     "5. Eliminar un elemento al final\n"+ //TODO @Martínez Ruiz Josué Ignacio
@@ -44,7 +44,14 @@ public class Main {
                                     "10. Salir\n",
                             "Menú de opciones", 3));
                     switch (opcion) {
-                        case 1: //Insertar un elemento al inicio TODO @Rodriguez Andrade Denise
+                        case 1://Insertar un elemento al inicio
+                            try {
+                            elemento = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingrese el elemento a insertar al inicio:", "Insertar al Inicio", JOptionPane.QUESTION_MESSAGE));
+                            lista.insertarInicio(elemento);
+                            JOptionPane.showMessageDialog(null, "Elemento " + elemento + " insertado al inicio.", "Éxito", JOptionPane.INFORMATION_MESSAGE);
+                        } catch (NumberFormatException n) {
+                            JOptionPane.showMessageDialog(null, "Error: Ingrese un número válido.", "Error de Ingreso", JOptionPane.ERROR_MESSAGE);
+                        }
                             break;
                         case 2://Insertar un elemento al final // Leyva Silva Andres Jovany
                             try {
