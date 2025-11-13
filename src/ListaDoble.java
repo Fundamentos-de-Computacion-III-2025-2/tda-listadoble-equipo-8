@@ -21,8 +21,7 @@ public class ListaDoble {
     }
 
 
-    //Metodo para insertar al Final de la lista doble
-    public void insertarFinal(int dato) {
+
         NodoDoble nodo = new NodoDoble(dato);
         if (listaVacia()) {
             inicio = nodo;
@@ -45,7 +44,7 @@ public class ListaDoble {
     }
 
 
-    //Eliminar al inicio
+    //Eliminar al inicio // Leyva Silva Andres Jovany
     public int eliminarInicio(){
             if (inicio == null) { //correcion
                 return -1;
