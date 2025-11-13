@@ -35,7 +35,7 @@ public class Main {
                             "1. Insertar un elemento al inicio\n"+
                                     "2. Insertar un elemento al final\n"+ //TODO @Leyva Silva Andres Jovany
                                     "3. Insertar un elemento en orden\n"+ //TODO @Martínez Ruiz Josué Ignacio
-                                    "4. Eliminar un elemento al inicio\n"+ //TODO @Leyva Silva Andres Jovany
+                                    "4. Eliminar un elemento al inicio\n"+ //TODO Leyva Silva Andres Jovany
                                     "5. Eliminar un elemento al final\n"+ //TODO @Martínez Ruiz Josué Ignacio
                                     "6. Eliminar un elemento\n"+ //TODO @Ortega Molina Marco Sebastian
                                     "7. Buscar un elemento\n"+ //TODO @Ortega Molina Marco Sebastian
@@ -53,11 +53,25 @@ public class Main {
                             JOptionPane.showMessageDialog(null, "Error: Ingrese un número válido.", "Error de Ingreso", JOptionPane.ERROR_MESSAGE);
                         }
                             break;
-                        case 2://Insertar un elemento al final TODO @Leyva Silva Andres Jovany
+                        case 2://Insertar un elemento al final // Leyva Silva Andres Jovany
+                            try {
+                                elemento = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingrese el elemento a insertar al final:", "Insertar al Inicio", JOptionPane.QUESTION_MESSAGE));
+                                lista.insertarFinal(elemento);
+                                JOptionPane.showMessageDialog(null, "Elemento " + elemento + " insertado al final.", "Éxito", JOptionPane.INFORMATION_MESSAGE);
+                            } catch (NumberFormatException n) {
+                                JOptionPane.showMessageDialog(null, "Error: Ingrese un número válido.", "Error de Ingreso", JOptionPane.ERROR_MESSAGE);
+                            }
                             break;
                         case 3: //Insertar en orden TODO @Martínez Ruiz Josué Ignacio
                             break;
-                        case 4: //Eliminar al inicio TODO @Leyva Silva Andres Jovany
+                        case 4: // Leyva Silva Andres Jovany
+                            Integer elementoEliminado = lista.eliminarInicio();
+
+
+                                JOptionPane.showMessageDialog(null, "Elemento " + elementoEliminado + " eliminado del inicio.",
+                                        "Éxito", JOptionPane.INFORMATION_MESSAGE);
+
+
                             break;
                         case 5: //Eliminar al final TODO @Martínez Ruiz Josué Ignacio
                             break;

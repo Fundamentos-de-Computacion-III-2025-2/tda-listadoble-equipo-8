@@ -37,6 +37,16 @@ public class ListaDoble {
     //Metodo para insertar al Final de la lista doble TODO @Leyva Silva Andres Jovany
     public void insertarFinal(int dato) {
 
+
+        NodoDoble nodo = new NodoDoble(dato);
+        if (listaVacia()) {
+            inicio = nodo;
+            fin = nodo;
+        } else {
+            nodo.anterior = fin;
+            fin.siguiente = nodo;
+            fin = nodo;
+        }
     }
 
 
@@ -50,11 +60,24 @@ public class ListaDoble {
     }
 
 
-    //Eliminar al inicio TODO @Leyva Silva Andres Jovany
-    public int eliminarInicio() {
+    //Eliminar al inicio // Leyva Silva Andres Jovany
+    public int eliminarInicio(){
+            if (inicio == null) { //correcion
+                return -1;
+            }
+            int actual = inicio.dato;
 
-        return -1;
-    }
+            if (inicio.siguiente == null) {
+                inicio = null;
+                fin = null;
+            }
+            else {
+
+                inicio = inicio.siguiente;
+                inicio.anterior = null;
+            }
+            return actual;
+        }
 
     //Eliminar al final TODO @Martínez Ruiz Josué Ignacio
     public int eliminarFinal() {
