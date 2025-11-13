@@ -63,7 +63,7 @@ public class ListaDoble {
 
     }
 
-    //Imprimir los datos de la lista doble de inicio a fin TODO @Ibarra Padilla Sebastian
+    //Imprimir los datos de la lista doble de inicio a fin - Ibarra Padilla Sebastian
     public void mostrarInicioFin(){
         NodoDoble actual=inicio;
         System.out.println();
@@ -73,9 +73,14 @@ public class ListaDoble {
         }
     }
 
-    //Imprimir los datos de la lista doble de fin a inicio TODO @Ibarra Padilla Sebastian
+    //Imprimir los datos de la lista doble de fin a inicio - Ibarra Padilla Sebastian
     public void mostrarFinInicio(){
-
+        NodoDoble actual = fin;
+        System.out.println();
+        while (actual!=null){
+            System.out.print(actual.dato + " --> ");
+            actual = actual.anterior;
+        }
     }
 
 

@@ -58,10 +58,10 @@ public class Main {
                             break;
                         case 7: //Buscar elemento TODO @Ortega Molina Marco Sebastian
                             break;
-                        case 8: //MostrarLista TODO @Ibarra Padilla Sebastian
+                        case 8: //MostrarLista - Ibarra Padilla Sebastian
                             lista.mostrarInicioFin();
                             break;
-                        case 9: //MostrarLista TODO @Ibarra Padilla Sebastian
+                        case 9: //MostrarLista - Ibarra Padilla Sebastian
                             lista.mostrarFinInicio();
                             break;
                         case 10: //Salir
