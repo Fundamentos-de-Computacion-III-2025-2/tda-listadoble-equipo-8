@@ -16,7 +16,7 @@ public class ListaDoble {
         }
     }
 
-    //Metodo para agregar un NodoDoble al Inicio de la Lista Doble TODO @Rodriguez Andrade Denise
+    //Metodo para agregar un NodoDoble al Inicio de la Lista Doble - Rodriguez Andrade Denise Abigail
     public void insertarInicio(int dato) {
         // 1. Crear el nuevo nodo, enlazándolo al actual 'inicio'
         NodoDoble nuevoNodo = new NodoDoble(dato, inicio, null);
@@ -34,7 +34,7 @@ public class ListaDoble {
         }
     }
 
-    //Metodo para insertar al Final de la lista doble TODO @Leyva Silva Andres Jovany
+    //Metodo para insertar al Final de la lista doble - Leyva Silva Andres Jovany
     public void insertarFinal(int dato) {
 
 
@@ -77,7 +77,7 @@ public class ListaDoble {
     }
 
 
-    //Eliminar al inicio // Leyva Silva Andres Jovany
+    //Eliminar al inicio - Leyva Silva Andres Jovany
     public int eliminarInicio(){
             if (inicio == null) { //correcion
                 return -1;
@@ -111,8 +111,17 @@ public class ListaDoble {
         return elemento;
     }
 
-    //Eliminar un elemento TODO @Ortega Molina Marco Sebastian
+    //Eliminar un elemento - Ortega Molina Marco Sebastian
     public int eliminarElemento(int elemento) {
+        NodoDoble actual = inicio;
+
+        while (actual != null && actual.dato != elemento) {
+            actual = actual.siguiente;
+        }
+
+        if (actual == null) {
+            return -1;
+        }
 
         int datoEliminado = actual.dato;
 
@@ -136,7 +145,7 @@ public class ListaDoble {
         return datoEliminado;
     }
 
-    //Metodo para buscar un elemento Ortega Molina Marco Sebastian
+    //Metodo para buscar un elemento - Ortega Molina Marco Sebastian
     public boolean buscarElemento(int elemento){
         NodoDoble actual = inicio;
         while(actual != null){
@@ -148,7 +157,7 @@ public class ListaDoble {
         return false;
     }
 
-    //Imprimir los datos de la lista doble de inicio a fin TODO @Ibarra Padilla Sebastian
+    //Imprimir los datos de la lista doble de inicio a fin - Ibarra Padilla Sebastian
     public void mostrarInicioFin() {
         NodoDoble actual = inicio;
         System.out.println();
